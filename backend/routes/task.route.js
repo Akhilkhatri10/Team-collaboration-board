@@ -1,8 +1,8 @@
-
 import express from 'express';
+import {getTasksByBoardId, createTask, updateTask, deleteTask } from '../controllers/task.controller.js';
+
 
 const router = express.Router();
-import {getTasksByBoardId, createTask, updateTask, deleteTask } from '../controllers/task.controller.js';
 
 // Route to get tasks by board ID
 router.get('/GET/boards/:id/tasks', getTasksByBoardId);

@@ -7,18 +7,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Node modules
+node_modules/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Vite build output
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# System files
 .DS_Store
+Thumbs.db
+
+# Editor config
+.vscode/
+.idea/
+
+# Windows & VS Code project files
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Optional: lock files (choose only one if you're using npm/yarn/pnpm)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

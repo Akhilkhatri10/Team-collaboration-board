@@ -1,6 +1,5 @@
-
 import express from 'express';
-import { getAllBoards, createBoard } from '../controllers/boards.controller.js';
+import { getAllBoards, createBoard } from '../controllers/board.controller.js';
 
 
 const router = express.Router();

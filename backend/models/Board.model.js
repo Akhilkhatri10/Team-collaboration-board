@@ -3,11 +3,8 @@ import mongoose from "mongoose";
 const boardSchema = new mongoose.Schema({
     name: {
         type: String,
-        createdAt: {
-            type: Date,
-            default: Date.now
-        }
+        required: true
     },
-}, {timestamps: true})
+}, { timestamps: true }); // This automatically adds createdAt & updatedAt
 
 export const Board = mongoose.model("Board", boardSchema);

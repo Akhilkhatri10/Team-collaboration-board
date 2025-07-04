@@ -25,8 +25,10 @@ const taskSchema = new mongoose.Schema({
         default: 'medium'
     },
     assignedTo: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Board'
+        // type: mongoose.Schema.Types.ObjectId,
+        // ref: 'Board'
+        type: String, // Assuming assignedTo is a user ID in string format
+        required: false 
     },
     dueDate: {
         type: Date
